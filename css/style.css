@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Montserrat:wght@400;500&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    background: #111111;
+    color: #f2f2f2;
+
+    font-family: 'Montserrat', sans-serif;
+
+    line-height: 1.6;
+}
+
+
+header {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 30px 6%;
+
+    z-index: 100;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logo {
+    font-family: 'League Spartan', sans-serif;
+
+    font-size: 28px;
+    font-weight: 700;
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+.nav-links {
+    display: flex;
+    gap: 35px;
+}
+
+
+.nav-links a {
+    color: #aaa;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: white;
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    padding: 0 10%;
+}
+
+
+.eyebrow {
+    font-size: 12px;
+
+    letter-spacing: 4px;
+
+    color: #888;
+
+    margin-bottom: 25px;
+}
+
+
+.hero h1 {
+    font-family: 'League Spartan', sans-serif;
+
+    font-size: clamp(80px, 13vw, 200px);
+
+    line-height: 0.8;
+
+    letter-spacing: -8px;
+}
+
+
+.hero h1 span {
+    color: #777;
+}
+
+
+.hero-description {
+    max-width: 500px;
+
+    margin-top: 45px;
+
+    color: #999;
+
+    font-size: 15px;
+}
+
+
+.button {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 35px;
+
+    padding: 14px 25px;
+
+    border: 1px solid #444;
+
+    color: white;
+
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+.button:hover {
+    background: white;
+    color: #111;
+}
+
+
+/* SECTIONS */
+
+.section {
+    min-height: 70vh;
+
+    padding: 150px 10%;
+}
+
+
+.section-number {
+    color: #666;
+
+    font-size: 12px;
+
+    letter-spacing: 3px;
+
+    margin-bottom: 40px;
+}
+
+
+.section h2 {
+    font-family: 'League Spartan', sans-serif;
+
+    font-size: clamp(50px, 7vw, 100px);
+
+    line-height: 0.9;
+
+    margin-bottom: 60px;
+}
+
+
+.section > p:not(.section-number) {
+    max-width: 650px;
+
+    color: #aaa;
+
+    font-size: 18px;
+}
+
+
+/* PROJECTS */
+
+.projects {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+.project {
+    border-top: 1px solid #333;
+
+    padding: 25px 0;
+
+    transition: 0.3s;
+}
+
+
+.project:hover {
+    transform: translateY(-8px);
+}
+
+
+.project > span {
+    color: #666;
+}
+
+
+.project h3 {
+    font-family: 'League Spartan', sans-serif;
+
+    font-size: 40px;
+
+    margin: 30px 0 15px;
+}
+
+
+.project p {
+    color: #888;
+
+    font-size: 14px;
+}
+
+
+.tags {
+    display: flex;
+
+    gap: 8px;
+
+    margin-top: 25px;
+}
+
+
+.tags span {
+    border: 1px solid #333;
+
+    padding: 5px 10px;
+
+    font-size: 10px;
+
+    color: #999;
+}
+
+
+/* SKILLS */
+
+.skills {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 15px;
+}
+
+
+.skills span {
+    font-family: 'League Spartan', sans-serif;
+
+    font-size: 30px;
+
+    border-bottom: 1px solid #444;
+
+    padding-bottom: 5px;
+}
+
+
+/* CONTACT */
+
+.contact {
+    min-height: 80vh;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.contact a {
+    color: white;
+
+    font-size: 25px;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 40px 10%;
+
+    border-top: 1px solid #222;
+
+    color: #555;
+
+    font-size: 12px;
+}
+
+
+/* RESPONSIVO */
+
+@media (max-width: 800px) {
+
+    .nav-links {
+        display: none;
+    }
+
+    .hero {
+        padding: 0 7%;
+    }
+
+    .section {
+        padding: 100px 7%;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        letter-spacing: -4px;
+    }
+
+}
+
+.section {
+    opacity: 0;
+
+    transform: translateY(40px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s ease;
+}
+
+
+.section.visible {
+    opacity: 1;
+
+    transform: translateY(0);
+}
