@@ -129,6 +129,18 @@ nav {
     font-size: 15px;
 }
 
+.project a {
+    display: inline-block;
+    margin-top: 25px;
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.project a:hover {
+    color: #888888;
+    text-decoration: none;
+}
 
 .button {
     display: inline-block;
@@ -146,6 +158,8 @@ nav {
     text-decoration: none;
 
     transition: 0.3s;
+
+    
 }
 
 
