@@ -358,3 +358,18 @@ footer {
 
     transform: translateY(0);
 }
+
+.project a {
+    display: inline-block;
+    margin-top: 25px;
+
+    color: #ffffff;
+    font-size: 13px;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+.project a:hover {
+    color: #888888;
+}
