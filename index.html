@@ -1,231 +1,159 @@
 <!DOCTYPE html>
-
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-```
-<title>Guilherme Farias — Portfólio</title>
-
-<meta
-    name="description"
-    content="Portfólio de Guilherme Farias, estudante de Análise e Desenvolvimento de Sistemas e desenvolvedor em formação."
->
-
-<link rel="stylesheet" href="css/style.css">
-```
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#111111">
+  <meta name="description" content="Portfólio de Guilherme Farias — desenvolvimento front-end, interfaces e projetos web com personalidade.">
+  <meta property="og:title" content="Guilherme Farias — Portfólio">
+  <meta property="og:description" content="Código, design e ideias transformadas em experiências digitais.">
+  <meta property="og:type" content="website">
+  <title>Guilherme Farias — Portfólio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=League+Spartan:wght@400;500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
 </head>
-
 <body>
-
-```
-<header>
-    <nav>
-        <a href="#" class="logo">GF.</a>
-
-        <div class="nav-links">
-            <a href="#sobre">Sobre</a>
-            <a href="#projetos">Projetos</a>
-            <a href="#habilidades">Habilidades</a>
-            <a href="#contato">Contato</a>
-        </div>
+  <div class="site-noise" aria-hidden="true"></div>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Navegação principal">
+      <a class="logo" href="#inicio" aria-label="Guilherme Farias, início">gf<span>.</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links" id="nav-links">
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos <span class="nav-count">03</span></a>
+        <a href="#habilidades">Stack</a>
+        <a class="nav-contact" href="#contato">Vamos conversar <span>↗</span></a>
+      </div>
     </nav>
-</header>
+  </header>
 
-
-<main>
-
-    <!-- hero -->
-    <section class="hero">
-
-        <p class="eyebrow">DESENVOLVEDOR EM FORMAÇÃO • DESIGNER</p>
-
-        <h1>
-            Guilherme<br>
-            <span>Farias.</span>
-        </h1>
-
-        <p class="hero-description">
-            Estudante de Análise e Desenvolvimento de Sistemas,
-            explorando desenvolvimento web, programação e design
-            através de projetos próprios.
-        </p>
-
-        <a href="#projetos" class="button">
-            Ver projetos →
-        </a>
-
-    </section>
-
-
-    <!-- sobre -->
-    <section id="sobre" class="section">
-
-        <p class="section-number">01 — SOBRE</p>
-
-        <h2>Quem sou eu?</h2>
-
-        <p>
-            Sou estudante de Análise e Desenvolvimento de Sistemas
-            e desenvolvedor em formação. Gosto de aprender na prática,
-            transformando ideias em projetos e explorando diferentes
-            áreas da tecnologia.
-        </p>
-
-        <p>
-            Atualmente, tenho estudado desenvolvimento web,
-            programação, consumo de APIs, bancos de dados e
-            ferramentas de desenvolvimento.
-        </p>
-
-    </section>
-
-
-    <!-- projetos -->
-    <section id="projetos" class="section">
-
-        <p class="section-number">02 — PROJETOS</p>
-
-        <h2>O que eu faço.</h2>
-
-        <div class="projects">
-
-            <article class="project">
-                <span>01</span>
-
-                <h3>Weather Dashboard</h3>
-
-                <p>
-                    Dashboard meteorológico que consome a API
-                    Open-Meteo para exibir temperatura atual,
-                    máxima, mínima, probabilidade de chuva e
-                    previsão das próximas horas.
-                </p>
-
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                    <span>JavaScript</span>
-                    <span>API</span>
-                </div>
-
-                <a
-                    href="https://github.com/gui100O/weather-dashboard"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Ver projeto →
-                </a>
-            </article>
-
-
-            <article class="project">
-                <span>02</span>
-
-                <h3>Site Confeitaria</h3>
-
-                <p>
-                    Projeto de desenvolvimento web criado para
-                    praticar estruturação de páginas, estilização
-                    e construção de uma interface para uma
-                    confeitaria.
-                </p>
-
-                <div class="tags">
-                    <span>HTML</span>
-                    <span>CSS</span>
-                </div>
-
-                <a
-                    href="https://github.com/gui100O/site-confeitaria"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Ver projeto →
-                </a>
-            </article>
-
-
-            <article class="project">
-                <span>03</span>
-
-                <h3>CalcFlash</h3>
-
-                <p>
-                    Jogo desenvolvido em Python e Pygame para
-                    praticar lógica de programação, operações
-                    matemáticas e desenvolvimento de jogos.
-                </p>
-
-                <div class="tags">
-                    <span>Python</span>
-                    <span>Pygame</span>
-                </div>
-
-            </article>
-
+  <main>
+    <section class="hero wrap" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot"></span> ADS student · front-end & visual design</p>
+        <h1>Ideias boas.<br><span class="headline-accent">Interfaces</span><br>com <span class="headline-outline">personalidade.</span></h1>
+        <p class="hero-description">Sou o Guilherme — desenvolvedor em formação, curioso por design e obcecado por transformar ideias em experiências digitais.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projetos">Explorar projetos <span>↘</span></a>
+          <a class="text-link" href="#sobre">Um pouco sobre mim <span>↗</span></a>
         </div>
-
+      </div>
+      <div class="hero-art" aria-label="Composição gráfica abstrata">
+        <div class="art-orbit orbit-one"></div>
+        <div class="art-orbit orbit-two"></div>
+        <div class="art-sun"></div>
+        <div class="art-block block-orange">DESIGN<br>MEETS<br>CODE<span>✳</span></div>
+        <div class="art-block block-lime">MAKE<br>IT<br>MATTER.</div>
+        <div class="art-sticker">feito com<br>curiosidade <span>↗</span></div>
+        <span class="art-coordinate">22°34' S / 44°57' W</span>
+        <span class="art-star star-one">✳</span><span class="art-star star-two">✳</span>
+      </div>
+      <div class="hero-bottom"><span>PORTFÓLIO / 2026</span><span>DESLIZE PARA DESCOBRIR <span class="down-arrow">↓</span></span></div>
     </section>
 
-
-    <!-- skills -->
-    <section id="habilidades" class="section">
-
-        <p class="section-number">03 — HABILIDADES</p>
-
-        <h2>Ferramentas.</h2>
-
-        <div class="skills">
-
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-            <span>PHP</span>
-            <span>MySQL</span>
-            <span>Python</span>
-            <span>Pygame</span>
-            <span>Git</span>
-            <span>GitHub</span>
-
+    <section class="intro-section" id="sobre">
+      <div class="wrap intro-grid reveal">
+        <p class="section-kicker"><span>01</span> / UM POUCO SOBRE MIM</p>
+        <div class="intro-copy">
+          <h2>Entre o visual e o funcional, é <span class="accent-pink">onde eu gosto de estar.</span></h2>
+          <p>Estudo Análise e Desenvolvimento de Sistemas na FATEC e gosto de criar para a web. Me interessam interfaces bem pensadas, tipografia, cores e aquele detalhe que faz um site deixar de ser só mais um site.</p>
+          <p>Aprendo construindo: experimento, erro, ajusto e tento deixar cada projeto melhor que o anterior. Aqui estão três projetos que representam bem essa jornada.</p>
+          <a class="text-link" href="https://github.com/gui100O" target="_blank" rel="noopener noreferrer">Mais código no GitHub <span>↗</span></a>
         </div>
-
+        <div class="intro-note"><span class="note-symbol">✳</span><p>Curiosidade<br>acima de tudo.</p><span class="note-small">DESDE SEMPRE, EM CONSTRUÇÃO.</span></div>
+      </div>
     </section>
 
+    <section class="projects-section wrap" id="projetos">
+      <div class="section-heading reveal">
+        <p class="section-kicker"><span>02</span> / TRABALHOS SELECIONADOS</p>
+        <div class="heading-row"><h2>Coisas que <span>fiz.</span></h2><p>03 projetos · código próprio<br>e muita tentativa.</p></div>
+      </div>
 
-    <!-- contato -->
-    <section id="contato" class="section contact">
+      <div class="project-list">
+        <article class="project-card project-weather reveal">
+          <div class="project-visual weather-visual">
+            <div class="visual-topline"><span>CLIMA EM CRUZEIRO — SP</span><span>01 / 03</span></div>
+            <div class="weather-widget">
+              <div><span class="weather-location">CRUZEIRO, BR</span><strong>24<span>°</span></strong><span class="weather-condition">Parcialmente nublado</span></div>
+              <div class="weather-sun" aria-hidden="true"><span></span></div>
+              <div class="weather-stats"><span>UMIDADE <b>68%</b></span><span>VENTO <b>12 km/h</b></span></div>
+            </div>
+            <span class="visual-caption">CURRENT CONDITIONS / API DATA</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>01 — WEATHER DASHBOARD</span><span class="project-type">WEB APP</span></div>
+            <h3>Um olhar sobre<br><em>o tempo.</em></h3>
+            <p>Um dashboard meteorológico que transforma dados da Open-Meteo em uma interface clara, útil e responsiva, com informações sobre as condições do tempo.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>REST API</span></div>
+            <div class="project-links"><a href="https://github.com/gui100O/weather-dashboard" target="_blank" rel="noopener noreferrer">Ver repositório <span>↗</span></a></div>
+          </div>
+        </article>
 
-        <p class="section-number">04 — CONTATO</p>
+        <article class="project-card project-sweet reveal">
+          <div class="project-visual sweet-visual">
+            <div class="visual-topline"><span>DOCE FEITO COM CARINHO</span><span>02 / 03</span></div>
+            <div class="sweet-layout">
+              <span class="sweet-sparkle sparkle-a">✳</span><span class="sweet-sparkle sparkle-b">✳</span>
+              <div class="cake-illustration" aria-hidden="true"><div class="cake-top"><i></i><i></i><i></i></div><div class="cake-body"><span></span><span></span><span></span></div><div class="cake-plate"></div></div>
+              <div class="sweet-label">um pedaço<br>de felicidade<span>♡</span></div>
+              <span class="sweet-stamp">FEITO À MÃO<br>COM AMOR</span>
+            </div>
+            <span class="visual-caption">A LITTLE BIT OF SWEETNESS</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>02 — SITE CONFEITARIA</span><span class="project-type">WEB DESIGN</span></div>
+            <h3>Uma presença<br><em>mais doce.</em></h3>
+            <p>Uma experiência web para uma confeitaria, explorando composição visual, cores acolhedoras e uma estrutura pensada para apresentar produtos de um jeito convidativo.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>Layout</span><span>Visual design</span></div>
+            <div class="project-links"><a href="https://github.com/gui100O/site-confeitaria" target="_blank" rel="noopener noreferrer">Ver repositório <span>↗</span></a></div>
+          </div>
+        </article>
 
-        <h2>Vamos conversar?</h2>
-
-        <a href="mailto:guilhermefasousa@gmail.com">
-            guilhermefasousa@gmail.com
-        </a>
-
-        <a
-            href="https://github.com/gui100O"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            GitHub →
-        </a>
-
+        <article class="project-card project-archive reveal">
+          <div class="project-visual archive-visual">
+            <div class="visual-topline"><span>ARCHIVE.PROJ / FILM INDEX</span><span>03 / 03</span></div>
+            <div class="archive-interface">
+              <div class="archive-sidebar"><span class="archive-mark">a.</span><span>INDEX</span><span>FILMS</span><span>DIRECTORS</span><span>GENRES</span><span class="archive-side-bottom">EST. 2026</span></div>
+              <div class="archive-content"><span class="archive-overline">A PERSONAL CINEMA ARCHIVE</span><h4>Stories<br>worth <i>keeping.</i></h4><div class="film-row"><span>001</span><span class="film-poster poster-one">NO.</span><span>Essentials</span><b>↗</b></div><div class="film-row"><span>002</span><span class="film-poster poster-two">A24</span><span>Acclaimed</span><b>↗</b></div><div class="film-row"><span>003</span><span class="film-poster poster-three">35mm</span><span>Discover</span><b>↗</b></div></div>
+            </div>
+            <span class="visual-caption">A DATABASE FOR FILM LOVERS</span>
+          </div>
+          <div class="project-info">
+            <div class="project-meta"><span>03 — ARCHIVE.PROJ</span><span class="project-type">FULL-STACK</span></div>
+            <h3>Filmes que<br><em>ficam com você.</em></h3>
+            <p>Um arquivo pessoal de cinema para organizar filmes, diretores e gêneros. O projeto combina interface web com PHP e MySQL para estruturar e consultar os dados.</p>
+            <div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span></div>
+            <div class="project-links"><a href="https://github.com/gui100O/archive.proj" target="_blank" rel="noopener noreferrer">Ver repositório <span>↗</span></a></div>
+          </div>
+        </article>
+      </div>
     </section>
 
-</main>
+    <section class="stack-section" id="habilidades">
+      <div class="wrap stack-inner reveal">
+        <p class="section-kicker"><span>03</span> / MINHA CAIXA DE FERRAMENTAS</p>
+        <h2>Aprendendo.<br><span>Experimentando.</span><br>Construindo.</h2>
+        <div class="stack-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>PHP</span><span>MySQL</span><span>Git & GitHub</span><span>Responsive design</span><span>REST APIs</span></div>
+        <p class="stack-footnote">A stack muda. A curiosidade fica.</p>
+      </div>
+    </section>
 
-
-<footer>
-    <p>© 2026 Guilherme Farias</p>
-</footer>
-
-
-<script src="js/script.js"></script>
-```
-
+    <section class="contact-section wrap" id="contato">
+      <div class="contact-card reveal">
+        <p class="section-kicker"><span>04</span> / FIM DA PÁGINA, NÃO DAS IDEIAS</p>
+        <h2>Tem alguma<br>coisa <span>em mente?</span></h2>
+        <p>Uma ideia, uma oportunidade ou só vontade de trocar uma ideia? Minha caixa de entrada está aberta.</p>
+        <a class="button button-dark" href="mailto:guilhermefasousa@gmail.com">Me manda uma mensagem <span>↗</span></a>
+        <div class="contact-doodle" aria-hidden="true">✳</div>
+      </div>
+      <footer class="footer"><a class="logo" href="#inicio">gf<span>.</span></a><span>Desenhado com intenção. Codado com curiosidade.</span><div><a href="https://github.com/gui100O" target="_blank" rel="noopener noreferrer">GitHub ↗</a><span>© <span id="year">2026</span></span></div></footer>
+    </section>
+  </main>
 </body>
 </html>
